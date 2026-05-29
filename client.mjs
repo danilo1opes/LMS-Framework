@@ -1,8 +1,10 @@
 const base = 'http://localhost:3000';
 
 setTimeout(async () => {
-  const reponse1 = await fetch(base + '/curso/javascript');
-  console.log(reponse1.ok, reponse1.status);
-  const reponse2 = await fetch(base + '/');
-  console.log(reponse2.ok, reponse2.status);
+  const response1 = await fetch(base + '/curso/python');
+  console.log(response1.ok, response1.status);
+  const body = await response1.json();
+  console.log(body);
+  const response2 = await fetch(base + '/');
+  console.log(response2.ok, response2.status);
 }, 200);
