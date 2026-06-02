@@ -1,7 +1,7 @@
 const base = 'http://localhost:3000';
 
 setTimeout(async () => {
-  const response1 = await fetch(base + '/curso/python');
+  const response1 = await fetch(base + '/products/notebook');
   console.log(response1.ok, response1.status);
   const body = await response1.json();
   console.log(body);
